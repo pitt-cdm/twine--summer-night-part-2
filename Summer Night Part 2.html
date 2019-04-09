@@ -33,7 +33,9 @@ tw-story[tags~="Sunset"] {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -57,9 +59,10 @@ You have to [[decide -&gt;User Choice 2]]what you want to do tonight.</tw-passag
 
 You decide that this group of friends is a bad influence. [[Beginning of Story&lt;- Find]] a new group.</tw-passagedata><tw-passagedata pid="6" name="User Chooses Character" tags="Sunset" position="417,279" size="100,100">Choose a character: [[Boy -&gt; Boy]] or [[Girl -&gt; Girl]]</tw-passagedata><tw-passagedata pid="7" name=" Boy" tags="Boy" position="295,453" size="100,100">This is [[you -&gt;Your name is Taylor!]] </tw-passagedata><tw-passagedata pid="8" name=" Girl" tags="Girl" position="535,453" size="100,100">This is [[you -&gt;Your name is Taylor!]] </tw-passagedata><tw-passagedata pid="9" name=" Manhunt" tags="" position="226,902" size="100,100">Where do you want to play manhunt?</tw-passagedata><tw-passagedata pid="10" name=" Asylum" tags="" position="394,895" size="100,100">There is an abandoned asylum near your house. You have always wanted to explore it. Do you tell your parents where you are going?
 
-You tell your mother.
-You [[do not tell -&gt; Asylum Door]] your mother where you are going. 
-</tw-passagedata><tw-passagedata pid="11" name=" Oujia" tags="" position="538,899" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name=" Home" tags="" position="688,883" size="100,100">You [[go -&gt; Mom Decision]] home.</tw-passagedata><tw-passagedata pid="13" name=" Mom Decision" tags="" position="688,1033" size="100,100">Your mom tells you to go and [[play -&gt;User Choice 2]] with your friends. Her witch coven is meeting at your house tonight.</tw-passagedata><tw-passagedata pid="14" name=" Asylum Door" tags="" position="394,1045" size="100,100">You and 5 friends walk over to the abandoned asylum. You [[reach -&gt; Asylum Locked Door]] for the door handle. </tw-passagedata><tw-passagedata pid="15" name=" Asylum Locked Door" tags="" position="394,1195" size="100,100">The door is locked! Suddenly, your friend remembers that there is a key hidden somewhere near the front entrance. You all [[search -&gt; Asylum Key]] for the key. </tw-passagedata><tw-passagedata pid="16" name=" Asylum Key" tags="" position="394,1345" size="100,100">You search for the key to no avail. You are already very tired. You decide to:
+You [(set: $tellmother to true)(link-goto: &quot;tell&quot;, &quot;Asylum Door&quot;)] your mother.
+You [(set: $tellmother to false)(link-goto: &quot;do not tell&quot;, &quot;Asylum Door&quot;)] your mother where you are going. 
+
+</tw-passagedata><tw-passagedata pid="11" name=" Oujia" tags="" position="538,899" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="12" name=" Home" tags="" position="688,883" size="100,100">You [[go -&gt; Mom Decision]] home.</tw-passagedata><tw-passagedata pid="13" name=" Mom Decision" tags="" position="688,1033" size="100,100">Your mom tells you to go and [[play -&gt;User Choice 2]] with your friends. Her witch coven is meeting at your house tonight.</tw-passagedata><tw-passagedata pid="14" name="Asylum Door" tags="" position="394,1045" size="100,100">You and 5 friends walk over to the abandoned asylum. You [[reach -&gt; Asylum Locked Door]] for the door handle. </tw-passagedata><tw-passagedata pid="15" name=" Asylum Locked Door" tags="" position="394,1195" size="100,100">The door is locked! Suddenly, your friend remembers that there is a key hidden somewhere near the front entrance. You all [[search -&gt; Asylum Key]] for the key. </tw-passagedata><tw-passagedata pid="16" name=" Asylum Key" tags="" position="394,1345" size="100,100">You search for the key to no avail. You are already very tired. You decide to:
 
 [[Go Home -&gt; Mom Decision]].
 [[Continue Searching -&gt; Key Found]]</tw-passagedata><tw-passagedata pid="17" name=" Key Found" tags="" position="394,1495" size="100,100">You continue to search for the key. Suddenly, your friend says &quot;Aha! I found it, it was laying in the front lawn.&quot;
