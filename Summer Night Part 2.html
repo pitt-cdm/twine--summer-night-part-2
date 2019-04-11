@@ -26,8 +26,18 @@ tw-story[tags~="Boy"] {
 	color: white;
 }
 
+tw-story[tags~="Girl"] {
+	background-color: pink;
+	color: white;
+}
+
 tw-story[tags~="Sunset"] {
 	background-color: pink;
+	color: white;
+}
+
+tw-story[tags~="Night"] {
+	background-color: black;
 	color: white;
 }
 
@@ -36,7 +46,10 @@ tw-story[tags~="Sunset"] {
 
 
 
+
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -61,15 +74,17 @@ You have to [[decide -&gt;User Choice 2]]what you want to do tonight.</tw-passag
 
 [[Stay -&gt; Home]] home.
 
-You decide that this group of friends is a bad influence. [[Beginning of Story&lt;- Find]] a new group.</tw-passagedata><tw-passagedata pid="6" name="User Chooses Character" tags="Sunset" position="402,200" size="100,100">Choose a character: [[Boy -&gt; Boy]] or [[Girl -&gt; Girl]]</tw-passagedata><tw-passagedata pid="7" name=" Boy" tags="Boy" position="299,399" size="100,100">This is [[you -&gt;Your name is Taylor!]] </tw-passagedata><tw-passagedata pid="8" name=" Girl" tags="Girl" position="499,381" size="100,100">This is [[you -&gt;Your name is Taylor!]] </tw-passagedata><tw-passagedata pid="9" name=" Manhunt" tags="" position="101,1202" size="100,100">Where do you want to play manhunt?</tw-passagedata><tw-passagedata pid="10" name=" Asylum" tags="" position="303,1199" size="100,100">There is an abandoned asylum near your house. You have always wanted to explore it. Do you tell your parents where you are going?
+You decide that this group of friends is a bad influence. [[Beginning of Story&lt;- Find]] a new group.</tw-passagedata><tw-passagedata pid="6" name="User Chooses Character" tags="Sunset" position="402,200" size="100,100">Choose a character: [[Boy -&gt; Boy]] or [[Girl -&gt; Girl]]</tw-passagedata><tw-passagedata pid="7" name=" Boy" tags="Boy" position="299,399" size="100,100">This is [[you -&gt;Your name is Taylor!]] </tw-passagedata><tw-passagedata pid="8" name=" Girl" tags="Girl" position="499,381" size="100,100">This is [[you -&gt;Your name is Taylor!]] </tw-passagedata><tw-passagedata pid="9" name=" Manhunt" tags="Sunset" position="101,1202" size="100,100">Where do you want to play manhunt?
+
+You don&#39;t have enough people to play manhunt. You need to [[find -&gt;User Choice 2]] something else to do. </tw-passagedata><tw-passagedata pid="10" name=" Asylum" tags="Sunset" position="303,1199" size="100,100">There is an abandoned asylum near your house. You have always wanted to explore it. Do you tell your parents where you are going?
 
 You [(set: $tellmother to true)(link-goto: &quot;tell&quot;, &quot;Asylum Door&quot;)] your mother.
 You [(set: $tellmother to false)(link-goto: &quot;do not tell&quot;, &quot;Asylum Door&quot;)] your mother where you are going. 
 
-</tw-passagedata><tw-passagedata pid="11" name=" Oujia" tags="" position="499,1202" size="100,100">You [[go-&gt;Found Oujia]] look for the Oujia board.</tw-passagedata><tw-passagedata pid="12" name=" Home" tags="" position="706,1201" size="100,100">You [[go -&gt; Mom Decision]] home.</tw-passagedata><tw-passagedata pid="13" name=" Mom Decision" tags="" position="704,1401" size="100,100">Your mom tells you to go and [[play -&gt;User Choice 2]] with your friends. Her witch coven is meeting at your house tonight.</tw-passagedata><tw-passagedata pid="14" name="Asylum Door" tags="" position="299,1400" size="100,100">You and 5 friends walk over to the abandoned asylum. You [[reach -&gt; Asylum Locked Door]] for the door handle. </tw-passagedata><tw-passagedata pid="15" name=" Asylum Locked Door" tags="" position="301,1601" size="100,100">The door is locked! Suddenly, your friend remembers that there is a key hidden somewhere near the front entrance. You all [[search -&gt; Asylum Key]] for the key. </tw-passagedata><tw-passagedata pid="16" name=" Asylum Key" tags="" position="303,1801" size="100,100">You search for the key to no avail. You are already very tired. You decide to:
+</tw-passagedata><tw-passagedata pid="11" name=" Oujia" tags="Sunset" position="499,1202" size="100,100">You [[go-&gt;Found Oujia]] look for the Oujia board.</tw-passagedata><tw-passagedata pid="12" name=" Home" tags="Sunset" position="706,1201" size="100,100">You [[go -&gt; Mom Decision]] home.</tw-passagedata><tw-passagedata pid="13" name=" Mom Decision" tags="Sunset" position="704,1401" size="100,100">Your mom tells you to go and [[play -&gt;User Choice 2]] with your friends. Her witch coven is meeting at your house tonight.</tw-passagedata><tw-passagedata pid="14" name="Asylum Door" tags="Sunset" position="299,1400" size="100,100">You and 5 friends walk over to the abandoned asylum. You [[reach -&gt; Asylum Locked Door]] for the door handle. </tw-passagedata><tw-passagedata pid="15" name=" Asylum Locked Door" tags="Night" position="301,1601" size="100,100">The door is locked! Suddenly, your friend remembers that there is a key hidden somewhere near the front entrance. You all [[search -&gt; Asylum Key]] for the key. </tw-passagedata><tw-passagedata pid="16" name=" Asylum Key" tags="Night" position="303,1801" size="100,100">You search for the key to no avail. You are already very tired. You decide to:
 
 [[Go Home -&gt; Mom Decision]].
-[[Continue Searching -&gt; Key Found]]</tw-passagedata><tw-passagedata pid="17" name=" Key Found" tags="" position="299,2000" size="100,100">You continue to search for the key. Suddenly, your friend says &quot;Aha! I found it, it was laying in the front lawn.&quot;
+[[Continue Searching -&gt; Key Found]]</tw-passagedata><tw-passagedata pid="17" name=" Key Found" tags="Night" position="299,2000" size="100,100">You continue to search for the key. Suddenly, your friend says &quot;Aha! I found it, it was laying in the front lawn.&quot;
 
 Your friend puts the key into the keyhole and [[turns -&gt; Aslum Entrance]] the lock.</tw-passagedata><tw-passagedata pid="18" name=" Aslum Entrance" tags="" position="301,2200" size="100,100">Your friend turns the door handle. The door creaks open. 
 
@@ -78,19 +93,22 @@ Your friend puts the key into the keyhole and [[turns -&gt; Aslum Entrance]] the
 You decide to:
 
 [[Take the key inside with you. -&gt; Asylum Inside]]
-[[Push the door completely open and place a heavy brick to prop it open -&gt; Asylum Inside]]</tw-passagedata><tw-passagedata pid="19" name=" Asylum Inside" tags="" position="298,2402" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Found Oujia" tags="" position="503,1399" size="100,100">Your mother doesn&#39;t let you play with her magical items without her supervision so you and your friends [[sneak-&gt;Oujia out the house]] the board out of the house.</tw-passagedata><tw-passagedata pid="21" name="Oujia out the house" tags="" position="500,1601" size="100,100">You successfully sneak the Oujia Board out!
+[[Push the door completely open and place a heavy brick to prop it open -&gt; Asylum Inside]]</tw-passagedata><tw-passagedata pid="19" name=" Asylum Inside" tags="Night" position="298,2402" size="100,100">You step inside the Asylum. You decide to do a headcount. There are 5 of you present. You decide to:
+
+[[All stay together. -&gt; All stay together]]
+[[Split up and start exploring. -&gt; Split up]]</tw-passagedata><tw-passagedata pid="20" name="Found Oujia" tags="Sunset" position="503,1399" size="100,100">Your mother doesn&#39;t let you play with her magical items without her supervision so you and your friends [[sneak-&gt;Oujia out the house]] the board out of the house.</tw-passagedata><tw-passagedata pid="21" name="Oujia out the house" tags="Sunset" position="500,1601" size="100,100">You successfully sneak the Oujia Board out!
 
 Where will you go use it now?
 
 One of your friends suggests the [[woods-&gt;the woods]].
 
-Another suggests the [[shed-&gt;the shed]] behind their house.</tw-passagedata><tw-passagedata pid="22" name="the woods" tags="" position="500,1804" size="100,100">You rush with your friends through town to the edge of the woods.
+Another suggests the [[shed-&gt;the shed]] behind their house.</tw-passagedata><tw-passagedata pid="22" name="the woods" tags="Night" position="500,1804" size="100,100">You rush with your friends through town to the edge of the woods.
 
 The woods are deep and dark. If someone got lost in there they might never come back...
 
 Do you want to go [[deeper-&gt;deeper]],
 
-Or choose the [[shed-&gt;the shed]] instead?</tw-passagedata><tw-passagedata pid="23" name="the shed" tags="" position="701,1801" size="100,100">You run to your friend shed.
+Or choose the [[shed-&gt;the shed]] instead?</tw-passagedata><tw-passagedata pid="23" name="the shed" tags="Night" position="701,1801" size="100,100">You run to your friend shed.
 
 It&#39;s creepier than your remember it.
 
@@ -98,15 +116,15 @@ The only light inside is the moonlight piercing through the holes in the roof. S
 
 You cold change your mind and head for [[the woods-&gt;the woods]] 
 
-Or you can stay and [[make the best of it-&gt;sit down]].</tw-passagedata><tw-passagedata pid="24" name="deeper" tags="" position="503,1998" size="100,100">You plunge deeper into the woods.
+Or you can stay and [[make the best of it-&gt;sit down]].</tw-passagedata><tw-passagedata pid="24" name="deeper" tags="Night" position="503,1998" size="100,100">You plunge deeper into the woods.
 
 Slowly the lights from town begin to fade and you are guided only by moonlight.
 
-You reach a small clearing and set down the Oujia Board to [[play-&gt;play]].</tw-passagedata><tw-passagedata pid="25" name="sit down" tags="" position="703,2001" size="100,100">As you and your friends settle in a strong gust of wind slams the door shut.
+You reach a small clearing and set down the Oujia Board to [[play-&gt;play]].</tw-passagedata><tw-passagedata pid="25" name="sit down" tags="Night" position="703,2001" size="100,100">As you and your friends settle in a strong gust of wind slams the door shut.
 
 You are startled for a second but end up giggling at how anxious you all are.
 
-You set down th Oujia Board and prepare to [[play-&gt;play]].</tw-passagedata><tw-passagedata pid="26" name="play" tags="" position="598,2203" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
+You set down th Oujia Board and prepare to [[play-&gt;play]].</tw-passagedata><tw-passagedata pid="26" name="play" tags="" position="598,2203" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name=" All stay together" tags="" position="223,2552" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name=" Split up" tags="" position="373,2552" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
