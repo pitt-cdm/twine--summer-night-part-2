@@ -22,7 +22,7 @@ tw-story[tags~="Sunset"] {
 }
 
 tw-story[tags~="Boy"] {
-	background-color: blue;
+	background-color: lightblue;
 	color: white;
 }
 
@@ -44,6 +44,18 @@ tw-story[tags~="Night"] {
 tw-link {
   color: white;
 }
+
+tw-story[tags="Sunset","Night"] tw-link, tw-story[tags="Sunset","Night"] {
+    color: yellow; 
+}
+
+tw-story[tags="Boy","Girl"] tw-link, tw-story[tags="Boy","Girl"] {
+    color: black; 
+}
+
+
+
+
 
 
 
