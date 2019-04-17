@@ -6,4 +6,8 @@ In this Twine game, you need to choose what you want to do with your friends on 
 
 To play: 
 
-For source documentation: 
+For source documentation: Click (here)[https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/Sources.md].
+
+For our proposal document: Click (here)[https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/PROPOSAL.md].
+
+For our Javascript stylesheet: Click (here)[].
