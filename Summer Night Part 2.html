@@ -233,7 +233,7 @@ You decide to:
 
 [[Go upstairs-&gt;Basement Stairs]].
 [[Follow the figure]].
-[[Decipher the writing]] on the walls.</tw-passagedata><tw-passagedata pid="44" name="Follow the figure" tags="Flashlight" position="400,3046" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="45" name="Decipher the writing" tags="Flashlight" position="679,3062" size="100,100">It says:
+[[Decipher the writing]] on the walls.</tw-passagedata><tw-passagedata pid="44" name="Follow the figure" tags="Flashlight" position="400,3046" size="100,100">You decide to follow the figure down a hallway. It stops, and [[turns around]] as if it knows that you are following it.</tw-passagedata><tw-passagedata pid="45" name="Decipher the writing" tags="Flashlight" position="679,3062" size="100,100">It says:
 &lt;span class=&quot;creepy&quot;&gt;THOSE WHO DARE TO DISTURB THE MASTER WILL REGRET IT!&lt;/span&gt;
 
 You get creeped out, and suddenly notice your mother&#39;s watch on the ground. 
@@ -504,22 +504,38 @@ or
 
 [[Go back home]]. </tw-passagedata><tw-passagedata pid="101" name="Go back home" tags="Dawn" position="550,3646" size="100,100">Congratulations! You have survived another night of shenanigans with your friends. Luckily your mother and her witch coven came at just the right time. 
 
-Do you want to [[play again -&gt;Beginning of Story]] tomorrow night?</tw-passagedata><tw-passagedata pid="102" name="figure coming towards you" tags="Night" position="700,3496" size="100,100">As it gets closer, you realize that you recognize him. You have seen him in a few photographs from an article you had to read for school. It is the old master of this asylum. You thought he was [[dead]]?</tw-passagedata><tw-passagedata pid="103" name="dead" tags="Night" position="700,3646" size="100,100">You decide to run for your life. You keep getting [[lost]], and the man is gaining on you. 
+Do you want to [[play again -&gt;Beginning of Story]] tomorrow night?</tw-passagedata><tw-passagedata pid="102" name="figure coming towards you" tags="Night" position="700,3496" size="100,100">As it gets closer, you realize that you recognize him. You have seen him in a few photographs from an article you had to read for school. It is the old master of this asylum. You thought he was [[dead]]?</tw-passagedata><tw-passagedata pid="103" name="dead" tags="Night" position="700,3646" size="100,100">You decide to run for your life. You keep getting lost, and the man is gaining on you. He catches up to you, and you [[scream]] for help.
 
 
 </tw-passagedata><tw-passagedata pid="104" name="go home" tags="Night" position="400,3496" size="100,100">Your mother tells you to never go inside that insane asylum again. You could have died!
 
-You survived this, but you never hear from your friends again. Are they still stuck in that insane asylum? You will never know.</tw-passagedata><tw-passagedata pid="105" name="push it open" tags="Red" position="657,2730" size="100,100">When you push open the door, you get sucked in to a dark hole. You suddenly emerge in the [[Sub Basement Door]] of the asylum. </tw-passagedata><tw-passagedata pid="106" name="Credits" tags="" position="818,60" size="100,100">
+You survived this, but you never hear from your friends again. Are they still stuck in that insane asylum? You will never know.</tw-passagedata><tw-passagedata pid="105" name="push it open" tags="Red" position="657,2730" size="100,100">When you push open the door, you get sucked in to a dark hole. You suddenly emerge in the [[Sub Basement Door]] of the asylum. </tw-passagedata><tw-passagedata pid="106" name="Credits" tags="Dawn" position="818,60" size="100,100">Pictures:
+Boy - https://www.pexels.com/photo/boy-braces-dental-dental-health-543004/ 
+(Pexel License - Free for commercial &amp; noncommercial use, modification allowed, no attribution required)
 
-Click [[here-&gt;A Midsummer&#39;s Night]] to go back to the home page.</tw-passagedata><tw-passagedata pid="107" name="lost" tags="Night" position="700,3796" size="100,100">&lt;&lt;if $tellmother=true&gt;&gt;
-Suddenly, your mother and her witch coven burst through the door and banish the asylum master. [[You leave the asylum, never looking back.]]
+Girl - https://pixabay.com/illustrations/cute-girl-cartoon-2579862/
+(Pixabay License - Free for commercial &amp; noncommercial use, no attribution required)
+
+Sounds:
+Background sound - http://bbcsfx.acropolis.org.uk/?q=wind+rustl
+(Night atmosphere, open rural skyline, occasional gust of wind and rustle of leaves.)
+	RemArc Licence &amp; BBC Copyright &amp; Open Government Licence: bbc.co.uk - © copyright 2019 BBC.
+	
+
+Created in Ben Miller&#39;s Spring 2019 Composing Digital Media Class
 
 
-&lt;&lt;else&gt;&gt;
-You are doomed to spend the rest of your days as a ghost in the insane asylum. You should have stayed out of trouble.
 
-&lt;&lt;endif&gt;&gt;
-</tw-passagedata><tw-passagedata pid="108" name="You leave the asylum, never looking back." tags="Dawn" position="700,3946" size="100,100">You have survived another night, for now. Do you want to [[try again-&gt;Beginning of Story]] another night?</tw-passagedata><tw-passagedata pid="109" name="call" tags="Night" position="196,2697" size="100,100">Your mother comes to pick you up from the asylum. You [[go home]].</tw-passagedata></tw-storydata>
+
+Click [[here-&gt;A Midsummer&#39;s Night]] to go back to the home page.</tw-passagedata><tw-passagedata pid="107" name="scream" tags="Night" position="700,3796" size="100,100">(if: $tellmother is true)
+[Suddenly, your mother and her witch coven burst through the door and banish the asylum master. [[You leave the asylum, never looking back.]]]
+
+
+(else:)
+[You are doomed to spend the rest of your days as a ghost in the insane asylum. You should have stayed out of trouble.]
+
+
+</tw-passagedata><tw-passagedata pid="108" name="You leave the asylum, never looking back." tags="Dawn" position="700,3946" size="100,100">You have survived another night, for now. Do you want to [[try again-&gt;Beginning of Story]] another night?</tw-passagedata><tw-passagedata pid="109" name="call" tags="Night" position="196,2697" size="100,100">Your mother comes to pick you up from the asylum. You [[go home]].</tw-passagedata><tw-passagedata pid="110" name="turns around" tags="Night" position="400,3196" size="100,100">Suddenly, your flashlight dies, you are submerged into darkness. The figure starts walking towards you, you and your friends [[panic-&gt;figure coming towards you]]. </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
