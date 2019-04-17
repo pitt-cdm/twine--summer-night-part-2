@@ -10,4 +10,5 @@ For our proposal document: Click [here](https://github.com/pitt-cdm/twine--summe
 
 For our Javascript stylesheet: Click [here](https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/javascript_stylesheet.png).
 
-For our Story stylesheet: Click [here](https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/Story_stylesheet_1.png) and [here for the 2nd half](https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/Story_Stylesheet_2.png].
+For our Story stylesheet: Click [here](https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/Story_stylesheet_1.png) for the first half.
+	Click [here](https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/Story_Stylesheet_2.png) for the 2nd half.
