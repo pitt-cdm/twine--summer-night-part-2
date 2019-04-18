@@ -103,12 +103,14 @@ span.creepy {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">var audio = document.createElement('audio');
 audio.src = 
 	'https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/Background_Music.wav?raw=true';
 
 audio.loop = true;
 audio.play();
+
 
 
 
@@ -121,7 +123,9 @@ By: Emma Chen, Lauren Stanick &amp; Ryan Rattley
 
 Click [[here-&gt;User Chooses Character]] to begin.
 
-Click [[here-&gt;Credits]] for a list of credits for audio/images used. </tw-passagedata><tw-passagedata pid="3" name="Your name is Taylor!" tags="Sunset" position="399,598" size="100,100">Your name is [[Taylor -&gt;Beginning of Story]]!</tw-passagedata><tw-passagedata pid="4" name="Beginning of Story" tags="Sunset" position="401,797" size="100,100">It&#39;s 9:00pm. You&#39;re hanging out with friends.
+Click [[here-&gt;Credits]] for a list of credits for audio/images used. 
+
+(set: $tellmother to &quot;&quot;)</tw-passagedata><tw-passagedata pid="3" name="Your name is Taylor!" tags="Sunset" position="399,598" size="100,100">Your name is [[Taylor -&gt;Beginning of Story]]!</tw-passagedata><tw-passagedata pid="4" name="Beginning of Story" tags="Sunset" position="401,797" size="100,100">It&#39;s 9:00pm. You&#39;re hanging out with friends.
 
 You have to [[decide -&gt;User Choice 2]]what you want to do tonight.</tw-passagedata><tw-passagedata pid="5" name="User Choice 2" tags="Sunset" position="401,999" size="100,100">Do you decide to:
 
@@ -137,10 +141,10 @@ You decide that this group of friends is a bad influence. [[Beginning of Story&l
 
 &lt;img src=&quot;https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLxlirghE0--PBqbrRcWzCscsoNDqfqL1RNtKkY5F1whhfY4G6Sg&quot;&gt;</tw-passagedata><tw-passagedata pid="8" name=" Girl" tags="Girl" position="499,381" size="100,100">This is [[you -&gt;Your name is Taylor!]] 
 
-&lt;img src=&quot;https://cdn.pixabay.com/photo/2017/08/04/11/16/cute-2579862_960_720.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="9" name=" Manhunt" tags="Sunset" position="101,1202" size="100,100">You and your friends decide who should hide and be hunted. It&#39;s decided [[you -&gt; The Forest]] are the one that has to hide.</tw-passagedata><tw-passagedata pid="10" name=" Asylum" tags="Sunset" position="606,1182" size="100,100">There is an abandoned asylum near your house. You have always wanted to explore it. Do you tell your parents where you are going?
+&lt;img src=&quot;https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/girl.png&gt;</tw-passagedata><tw-passagedata pid="9" name=" Manhunt" tags="Sunset" position="101,1202" size="100,100">You and your friends decide who should hide and be hunted. It&#39;s decided [[you -&gt; The Forest]] are the one that has to hide.</tw-passagedata><tw-passagedata pid="10" name=" Asylum" tags="Sunset" position="606,1182" size="100,100">There is an abandoned asylum near your house. You have always wanted to explore it. Do you tell your parents where you are going?
 
-You [(set: $tellmother to true)(link-goto: &quot;tell&quot;, &quot;Asylum Door&quot;)] your mother.
-You [(set: $tellmother to false)(link-goto: &quot;do not tell&quot;, &quot;Asylum Door&quot;)] your mother where you are going. 
+You [[tell]] your mother.
+You [[do not tell]] your mother where you are going. 
 
 </tw-passagedata><tw-passagedata pid="11" name=" Oujia" tags="Sunset" position="894,1112" size="100,100">You [[go-&gt;Found Oujia]] look for the Oujia board.</tw-passagedata><tw-passagedata pid="12" name=" Home" tags="Sunset" position="919,853" size="100,100">You [(set: $tellmother to true)(link-goto: &quot;go&quot;, &quot; Mom Decision&quot;)] home.
 
@@ -533,7 +537,9 @@ Click [[here-&gt;A Midsummer&#39;s Night]] to go back to the home page.</tw-pass
 (else:)[You are doomed to spend the rest of your days as a ghost in the insane asylum. You should have stayed out of trouble.[[You lose -&gt;Beginning of Story]].]
 
 
-</tw-passagedata><tw-passagedata pid="108" name="You leave the asylum, never looking back." tags="Dawn" position="700,3946" size="100,100">You have survived another night, for now. Do you want to [[try again-&gt;Beginning of Story]] another night?</tw-passagedata><tw-passagedata pid="109" name="call" tags="Night" position="196,2697" size="100,100">Your mother comes to pick you up from the asylum. You [[go home]].</tw-passagedata><tw-passagedata pid="110" name="turns around" tags="Night" position="400,3196" size="100,100">Suddenly, your flashlight dies, you are submerged into darkness. The figure starts walking towards you, you and your friends [[panic-&gt;figure coming towards you]]. </tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="108" name="You leave the asylum, never looking back." tags="Dawn" position="700,3946" size="100,100">You have survived another night, for now. Do you want to [[try again-&gt;Beginning of Story]] another night?</tw-passagedata><tw-passagedata pid="109" name="call" tags="Night" position="196,2697" size="100,100">Your mother comes to pick you up from the asylum. You [[go home]].</tw-passagedata><tw-passagedata pid="110" name="turns around" tags="Night" position="400,3196" size="100,100">Suddenly, your flashlight dies, you are submerged into darkness. The figure starts walking towards you, you and your friends [[panic-&gt;figure coming towards you]]. </tw-passagedata><tw-passagedata pid="111" name="tell" tags="Sunset" position="490,1332" size="100,100">[[Makes sense -&gt;Asylum Door]].
+
+(set: $tellmother to true)</tw-passagedata><tw-passagedata pid="112" name="do not tell" tags="Sunset" position="730,1332" size="100,100">[[Makes sense -&gt;Asylum Door]].</tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
