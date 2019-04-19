@@ -143,8 +143,19 @@ You decide that this group of friends is a bad influence. [[Beginning of Story&l
 
 &lt;img src=&quot;https://github.com/pitt-cdm/twine--summer-night-part-2/blob/master/girl.png&gt;</tw-passagedata><tw-passagedata pid="9" name=" Manhunt" tags="Sunset" position="101,1202" size="100,100">You and your friends decide who should hide and be hunted. It&#39;s decided [[you -&gt; The Forest]] are the one that has to hide.</tw-passagedata><tw-passagedata pid="10" name=" Asylum" tags="Sunset" position="606,1182" size="100,100">There is an abandoned asylum near your house. You have always wanted to explore it. Do you tell your parents where you are going?
 
-You [[tell]] your mother.
-You [[do not tell]] your mother where you are going. 
+You (link: &quot;tell&quot;)[\
+	(set: $tellmother to true)\
+	(go-to: &quot;Asylum Door&quot;)\
+] your mother.
+
+You (link: &quot;do not tell&quot;)[\
+	(set: $tellmother to false)\
+	(go-to: &quot;Asylum Door&quot;)\
+] your mother.
+
+&lt;!---You [[tell]] your mother.---&gt;
+&lt;!---You [[do not tell]] your mother where you are going.---&gt;
+
 
 </tw-passagedata><tw-passagedata pid="11" name=" Oujia" tags="Sunset" position="894,1112" size="100,100">You [[go-&gt;Found Oujia]] look for the Oujia board.</tw-passagedata><tw-passagedata pid="12" name=" Home" tags="Sunset" position="919,853" size="100,100">You [(set: $tellmother to true)(link-goto: &quot;go&quot;, &quot; Mom Decision&quot;)] home.
 
